@@ -1,0 +1,20 @@
+.contained-exercises{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
+
+}
+
+.containedExercises>* {
+  flex-basis: 100%;
+
+}
+
+.exercise-card{
+background-color: bisque;
+
+margin: 1%;
+}
