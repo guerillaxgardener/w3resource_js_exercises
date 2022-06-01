@@ -3,15 +3,7 @@ import React from "react";
 
 
 const Header = (props) => {
-  // STATE**************************************
-  // const [show, setShow] = useState(false);
 
-
-  //EVENTHANDLER********************************
-
-
-
-  //**************************************************
   return (
 
     <>
