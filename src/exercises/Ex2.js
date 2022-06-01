@@ -4,20 +4,15 @@ import { Card, Button } from "react-bootstrap";
 
 
 const ex2 = (props) => {
-  // STATE**************************************
-  // const [show, setShow] = useState(false);
 
-
-  //EVENTHANDLER********************************
 let printThePage = () => {
   window.print();
 }
 
-  //**************************************************
   return (
 
     <>
-      <Card className="beastCards h-100" style={{ width: '18rem' }}>
+     
         <Card.Title>Exercise 2: Write a JavaScript program to print the contents of the current window.</Card.Title>
 
         <Card.Body>
@@ -33,7 +28,7 @@ let printThePage = () => {
             </Button>
           </Card.Text>
         </Card.Body>
-      </Card>
+ 
     </>
 
   )

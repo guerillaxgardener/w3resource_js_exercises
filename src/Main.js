@@ -1,33 +1,40 @@
 import React from "react";
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import Ex1 from "./exercises/Ex1";
 import Ex2 from "./exercises/Ex2";
 import Ex3 from "./exercises/Ex3";
+import Ex4 from "./exercises/Ex4";
+import "../src/Main.css";
 // import { useState } from 'react'
 
 
 const Main = (props) => {
-  // STATE**************************************
-  // const [show, setShow] = useState(false);
 
-
-  //EVENTHANDLER********************************
-
-
-
-  //**************************************************
   return (
 
     <>
-      <Row xs={1} sm={1} md={2} lg={3} xl={4}>
-        <Col xs={1} sm={1} md={2} lg={3} xl={4}>
+      <Container className="contained-exercises" >
 
-          <Ex1/>
-          <Ex2/>
-          <Ex3/>
+        <Card className="exercise-card" style={{ width: '18rem' }}>
+          <Ex1 />
+        </Card>
 
-        </Col>
-      </Row>
+        <Card className="exercise-card" style={{ width: '18rem' }}>
+          <Ex2 />
+        </Card>
+
+        <Card className="exercise-card" style={{ width: '18rem' }}>
+          <Ex3 />
+        </Card>
+
+        <Card className="exercise-card" style={{ width: '18rem' }}>
+          <Ex4 />
+        </Card>
+
+      </Container >
+
+      
+
     </>
 
   )

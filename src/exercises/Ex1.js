@@ -26,27 +26,27 @@ const ex1 = (props) => {
   return (
 
     <>
-      <Card className="beastCards h-100" style={{ width: '18rem' }}>
-        <Card.Title>Exercise 1: Display Current Date and Time.</Card.Title>
-        {/* <Card.Img
+
+      <Card.Title>Exercise 1: Display Current Date and Time.</Card.Title>
+      {/* <Card.Img
               src={this.props.beast.image_url}
               onClick={this.handleBeastClick}
               alt={this.props.beast.description}
             /> */}
-        <Card.Body>
-          <Card.Subtitle>
-            Static Sample Output : <br />
-            Today is : Tuesday. <br />
-            Current time is : 10 PM : 30 : 38
-          </Card.Subtitle>
+      <Card.Body>
+        <Card.Subtitle>
+          Static Sample Output : <br />
+          Today is : Tuesday. <br />
+          Current time is : 10 PM : 30 : 38
+        </Card.Subtitle>
 
-          <Card.Text>
-            SOLUTION: <br/>
-            Today is : {dayOfWeek} <br/>
-            Current time is {hours} : {minutes} : {seconds} {prepand}
-          </Card.Text>
-        </Card.Body>
-      </Card>
+        <Card.Text>
+          SOLUTION: <br />
+          Today is : {dayOfWeek} <br />
+          Current time is {hours} : {minutes} : {seconds} {prepand}
+        </Card.Text>
+      </Card.Body>
+
     </>
 
   )
