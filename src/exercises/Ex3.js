@@ -17,13 +17,8 @@ const ex3 = (props) => {
 
   let yyyy = today.getFullYear();
 
-  console.log(`${mm}-${dd}-${yyyy}, ${mm}/${dd}/${yyyy}`)
-
-
   return (
-
     <>
- 
         <Card.Title>Exercise 3: Write a JavaScript program to get the current date.
         </Card.Title>
 
@@ -38,9 +33,7 @@ const ex3 = (props) => {
             `{mm}-{dd}-{yyyy}, {mm}/{dd}/{yyyy}`
           </Card.Text>
         </Card.Body>
-   
     </>
-
   )
 }
 
