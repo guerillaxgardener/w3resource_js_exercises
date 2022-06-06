@@ -1,4 +1,5 @@
 import React from "react";
+import './Footer.css'
 // import { useState } from 'react'
 
 
@@ -15,10 +16,10 @@ const Footer = (props) => {
   return (
 
     <>
-      <header className="top-nav">
+      <header className="footer">
 
-        <h4 className="page-title">
-         
+        <h4 className="page-footer">
+        &copy; Michael Maker
         </h4>
 
       </header>
