@@ -4,6 +4,8 @@ import React from "react";
 import { useState } from 'react';
 import { useRef } from 'react';
 import { Card, Button, Overlay } from "react-bootstrap";
+import '../exercise.css';
+
 
 
 
@@ -27,21 +29,22 @@ const Ex6 = (props) => {
   return (
     <>
 
-      <Card.Title>Exercise 6: Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
+      <Card.Title className="exercise-title">
+        Exercise 6: Determine whether a given year is a leap year in the Gregorian calendar.
       </Card.Title>
 
 
-      <Card.Body>
+      <Card.Body className="exercise-body">
         <Button variant="danger" ref={target} onClick={() => setShow(!show)}>
           is {currentYear} a leap year?
         </Button>
 
 
-        <Card.Text>
+        <Card.Text className="exercise-solution">
 
         <Overlay target={target.current} show={show} placement="right">
           {({ placement, arrowProps, show: _show, popper, ...props }) => (
-            <div
+            <p
               {...props}
               style={{
                 position: 'absolute',
@@ -58,7 +61,7 @@ const Ex6 = (props) => {
               :
               "Not a leap year."
               }
-            </div>
+            </p>
           )}
         </Overlay>
         </Card.Text>
