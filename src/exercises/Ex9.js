@@ -17,15 +17,12 @@ const Ex9 = (props) => {
     handleMultiply(null)
     handleQuotient(null)
   }
-  console.log('first integer', typeof (int1), int1)
 
   const handleSecond = (e) => {
     handle2ndNumber(parseInt(e.target.value))
     handleMultiply(null)
     handleQuotient(null)
   }
-
-  console.log('second integer', typeof (int2), int2)
 
   // operations on user inputs
   const multiplier = (e) => {
@@ -37,10 +34,6 @@ const Ex9 = (props) => {
     const quotient = (int1 / int2)
     handleQuotient(quotient)
   }
-
-  console.log('product state', product, typeof (product))
-  console.log('quotient', quotient, typeof (quotient))
-
 
   return (
     <>
