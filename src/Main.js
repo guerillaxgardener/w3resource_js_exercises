@@ -9,6 +9,7 @@ import Ex6 from "./exercises/Ex6";
 import Ex7 from "./exercises/Ex7";
 import Ex8 from "./exercises/Ex8";
 import Ex9 from "./exercises/Ex9";
+import Ex10 from "./exercises/Ex10";
 
 import "../src/Main.css";
 // import { useState } from 'react'
@@ -55,6 +56,10 @@ const Main = (props) => {
 
         <Card className="exercise-card" style={{ width: '18rem' }}>
           <Ex9 />
+        </Card>
+
+        <Card className="exercise-card" style={{ width: '18rem' }}>
+          <Ex10 />
         </Card>
 
       </Container >
