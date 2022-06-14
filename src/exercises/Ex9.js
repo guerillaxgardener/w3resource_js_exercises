@@ -41,14 +41,6 @@ const Ex9 = (props) => {
   console.log('product state', product, typeof (product))
   console.log('quotient', quotient, typeof (quotient))
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   handleShow(true);
-  // }
-
-  // create functions to handle each integer on input and save them to state for later use..
-
-
 
   return (
     <>
