@@ -42,7 +42,7 @@ const Ex6 = (props) => {
 
         <Card.Text className="exercise-solution">
 
-        <Overlay target={target.current} show={show} placement="right">
+        <Overlay target={target.current} show={show} placement="bottom">
           {({ placement, arrowProps, show: _show, popper, ...props }) => (
             <p
               {...props}
