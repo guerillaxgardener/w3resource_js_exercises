@@ -10,9 +10,8 @@ const Ex4 = (props) => {
   const [side3, setSide3] = useState(0)
   const [area, getArea] = useState(0)
   const [areaDisplay, handleShow] = useState(false)
-  console.log('side 1 =', side1, 'side 2 =', side2, 'side 3 =', side3)
 
-
+  
   const handleSide1 = (e) => setSide(e.target.value)
   const handleSide2 = (e) => setSide2(e.target.value)
   const handleSide3 = (e) => setSide3(e.target.value)
@@ -21,9 +20,9 @@ const Ex4 = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     let s = ((parseFloat(side1) + parseFloat(side2) + parseFloat(side3)) / 2)
-    let area = Math.sqrt(s * ((s - side1) * (s - side2) * (s - side3)))
-    getArea(area);
-    displayArea();
+    let area = Math.sqrt(parseFloat(s) * ((parseFloat(s) - parseFloat(side1)) * (parseFloat(s) - parseFloat(side2)) * (parseFloat(s) - parseFloat(side3))))
+    getArea(area)
+    displayArea()
   }
 
   return (

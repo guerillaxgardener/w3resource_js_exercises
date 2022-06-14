@@ -35,7 +35,7 @@ const Ex8 = (props) => {
             />
 
           </label>
-          <input type="submit" value="Submit" />
+         
         </form>
 
 
@@ -50,9 +50,9 @@ const Ex8 = (props) => {
             (
               (parseInt(guess) === randoNum)
                 ?
-                `🎊 Good Work!! 🎊 ${randoNum} was the number!`
+                `🎊 Good Work!! ${randoNum} is the number! 🎊 `
                 :
-                `${guess} was not the number, try again!`
+                `${guess} is not the number, try again!`
             )
           }
 
