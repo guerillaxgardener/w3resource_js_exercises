@@ -1,9 +1,8 @@
 //11. Write a JavaScript program to get the website URL (loading page) 
 
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import '../exercise.css';
-import { useState } from "react";
 
 const Ex11 = (props) => {
   
