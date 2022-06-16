@@ -10,11 +10,9 @@ const App = (props) => {
 
   return (
     <>
-
       <Header />
       <Main />
       <Footer />
-
     </>
   )
 }

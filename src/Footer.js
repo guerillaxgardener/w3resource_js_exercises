@@ -16,13 +16,13 @@ const Footer = (props) => {
   return (
 
     <>
-      <header className="footer">
+      <footer className="footer">
 
         <h4 className="page-footer">
         &copy; Michael Maker
         </h4>
 
-      </header>
+      </footer>
     </>
 
   )

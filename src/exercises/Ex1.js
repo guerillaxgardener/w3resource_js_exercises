@@ -23,8 +23,7 @@ const Ex1 = (props) => {
 
   return (
 
-    <>
-
+    <Card className="exercise-card" style={{ width: '18rem' }}>
       <Card.Title className="exercise-title">
         Exercise 1: Current Date and Time.
       </Card.Title>
@@ -43,7 +42,7 @@ const Ex1 = (props) => {
           <Button variant="success" onClick={pageRefresh}> update time </Button>
         </Card.Text>
       </Card.Body>
-    </>
+    </Card>
   )
 }
 
