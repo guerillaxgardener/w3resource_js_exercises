@@ -10,27 +10,26 @@ const Ex2 = (props) => {
 
   return (
 
-    <>
+      <Card className="exercise-card" style={{ width: '18rem' }}>
+        <Card.Title className="exercise-title">
+          Ex 2: Print contents of the current window.
+        </Card.Title>
 
-      <Card.Title className="exercise-title">
-        Ex 2: Print contents of the current window.
-      </Card.Title>
+        <Card.Body className="exercise-body">
+          <Card.Subtitle className="exercise-expected-output">
 
-      <Card.Body className="exercise-body">
-        <Card.Subtitle className="exercise-expected-output">
+          </Card.Subtitle>
 
-        </Card.Subtitle>
-
-        <Card.Text className="exercise-solution">
-          SOLUTION: <br />
-          Click button to print the page!
-          <Button onClick={printThePage}>
-            Click to print!!
-          </Button>
-        </Card.Text>
-      </Card.Body>
-
-    </>
+          <Card.Text className="exercise-solution">
+            SOLUTION: <br />
+            Click button to print the page!
+            <Button onClick={printThePage}>
+              Click to print!!
+            </Button>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+  
 
   )
 }

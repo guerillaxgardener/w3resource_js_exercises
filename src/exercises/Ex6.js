@@ -27,7 +27,7 @@ const Ex6 = (props) => {
 
 
   return (
-    <>
+    <Card className="exercise-card" style={{ width: '18rem' }}>
 
       <Card.Title className="exercise-title">
         Exercise 6: Determine whether a given year is a leap year in the Gregorian calendar.
@@ -44,6 +44,7 @@ const Ex6 = (props) => {
 
         <Overlay target={target.current} show={show} placement="bottom">
           {({ placement, arrowProps, show: _show, popper, ...props }) => (
+            
             <p
               {...props}
               style={{
@@ -67,7 +68,7 @@ const Ex6 = (props) => {
         </Card.Text>
       </Card.Body>
 
-    </>
+    </Card>
 
   )
 }

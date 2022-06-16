@@ -15,10 +15,8 @@ const Ex12 = (props) => {
     handleDisplay(false)
     handleGuess(parseInt(e.target.value))
   }
-  // const showSolution = (e) => handleDisplay(true)
 
   const handleHundred = (e) => {
-    console.log('guess in function', guess)
     handleDisplay(true)
     if ((Math.abs(100 - guess) <= 20) || (Math.abs(400 - guess) <= 20)) {
       handleResult(true)
@@ -27,26 +25,8 @@ const Ex12 = (props) => {
     )
   }
 
-
-  // const handleTempTyped = (e) => {
-  //   handleTemp(parseInt(e.target.value))
-  // }
-
-  // const conversion = (e) => {
-  //   handleBaseUnit(e.target.value)
-  //   convertifyMeCaptain(null)
-  // }
-
-  // const doConversion = (e) => {
-  //   (convert === "celsius")
-  //     ?
-  //     convertifyMeCaptain((temp * 1.8000) + 32.00)
-  //     :
-  //     convertifyMeCaptain((temp - 32.00) / 1.80)
-  // }
-
   return (
-    <>
+    <Card className="exercise-card" style={{ width: '18rem' }}>
       <Card.Title className="exercise-title">
         Exercise 12: JavaScript program to check whether a given integer is within 20 of 100 or 400.
       </Card.Title>
@@ -55,12 +35,12 @@ const Ex12 = (props) => {
 
           <label>
             Enter number:
-            <input
-              type="integer"
-              name="guessInput"
-              onInput={handleGuessType}
-            />
           </label>
+          <input
+            type="integer"
+            name="guessInput"
+            onInput={handleGuessType}
+          />
           <Button
             onClick={e => { handleHundred(e) }}>
             Check number...
@@ -88,7 +68,7 @@ const Ex12 = (props) => {
       </Card.Text>
 
 
-    </>
+    </Card>
   )
 }
 

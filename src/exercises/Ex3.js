@@ -12,7 +12,7 @@ const Ex3 = (props) => {
   let yyyy = today.getFullYear();
 
   return (
-    <>
+    <Card className="exercise-card" style={{ width: '18rem' }}>
         <Card.Title className="exercise-title">
           Exercise 3: Display the current date.
         </Card.Title>
@@ -28,7 +28,7 @@ const Ex3 = (props) => {
             `{mm}-{dd}-{yyyy}, {mm}/{dd}/{yyyy}`
           </Card.Text>
         </Card.Body>
-    </>
+    </Card>
   )
 }
 

@@ -28,7 +28,7 @@ const Ex10 = (props) => {
   }
 
   return (
-    <>
+    <Card className="exercise-card" style={{ width: '18rem' }}>
       <Card.Title className="exercise-title">
         Exercise 10: Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
       </Card.Title>
@@ -37,14 +37,14 @@ const Ex10 = (props) => {
 
           <label>
             Enter Temp:
-            <input
-              type="integer"
-              name="tempInput"
-              onInput={handleTempTyped}
-            />
           </label>
+          <input
+            type="integer"
+            name="tempInput"
+            onInput={handleTempTyped}
+          />
 
-
+          <br />
           <input
             type="radio"
             id="celsius"
@@ -54,7 +54,7 @@ const Ex10 = (props) => {
           />
 
           <label
-            for="html">
+            htmlFor="html">
             Convert &deg;C to &deg;F
           </label>
 
@@ -68,7 +68,7 @@ const Ex10 = (props) => {
             onClick={e => { conversion(e) }}
           />
 
-          <label for="css">
+          <label htmlFor="css">
             Convert &deg;F to &deg;C
           </label>
 
@@ -105,7 +105,7 @@ const Ex10 = (props) => {
       </Card.Text>
 
 
-    </>
+    </Card>
   )
 }
 

@@ -23,7 +23,7 @@ const Ex5 = (props) => {
 
 
   return (
-    <>
+    <Card className="exercise-card" style={{ width: '18rem' }}>
 
       <Card.Title className="exercise-title">
         Exercise 5: Write a JavaScript program to calculate days left until next Christmas.
@@ -38,12 +38,10 @@ const Ex5 = (props) => {
             :
             <Button variant="success" onClick={handleChristmas}> How many days until Christmas?! </Button>
           }
-
         </Card.Text>
+
       </Card.Body>
-
-    </>
-
+    </Card>
   )
 }
 

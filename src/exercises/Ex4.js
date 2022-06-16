@@ -11,7 +11,7 @@ const Ex4 = (props) => {
   const [area, getArea] = useState(0)
   const [areaDisplay, handleShow] = useState(false)
 
-  
+
   const handleSide1 = (e) => setSide(e.target.value)
   const handleSide2 = (e) => setSide2(e.target.value)
   const handleSide3 = (e) => setSide3(e.target.value)
@@ -26,7 +26,7 @@ const Ex4 = (props) => {
   }
 
   return (
-    <>
+    <Card className="exercise-card" style={{ width: '18rem' }}>
 
       <Card.Title className="exercise-title">
         Exercise 4: Write a JavaScript program to find the area of a triangle when user provides lengths.
@@ -37,33 +37,33 @@ const Ex4 = (props) => {
         <form onSubmit={e => { handleSubmit(e) }}>
           <label>
             Side 1:
-            <input
-              type="number"
-              name="side1"
-              onInput={handleSide1}
-            />
           </label>
+          <input
+            type="number"
+            name="side1"
+            onInput={handleSide1}
+          />
 
           <label>
             Side 2:
-            <input
-              type="number"
-              name="side2"
-              onInput={handleSide2}
-
-            />
           </label>
+          <input
+            type="number"
+            name="side2"
+            onInput={handleSide2}
+          />
 
           <label>
             Side 3:
-            <input
-              type="number"
-              name="side3"
-              onInput={handleSide3}
-
-            />
           </label>
-          <input type="submit" value="Submit" />
+          <input
+            type="number"
+            name="side3"
+            onInput={handleSide3}
+          />
+
+          <input type="submit" />
+          
         </form>
 
         <Card.Text className="exercise-solution">
@@ -78,7 +78,7 @@ const Ex4 = (props) => {
         </Card.Text>
       </Card.Body>
 
-    </>
+    </Card>
 
   )
 }

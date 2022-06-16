@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Ex1 from "./exercises/Ex1";
 import Ex2 from "./exercises/Ex2";
 import Ex3 from "./exercises/Ex3";
@@ -12,73 +12,30 @@ import Ex9 from "./exercises/Ex9";
 import Ex10 from "./exercises/Ex10";
 import Ex11 from "./exercises/Ex11";
 import Ex12 from "./exercises/Ex12";
-
-
+import Ex13 from "./exercises/Ex13";
+import Ex14 from "./exercises/Ex14";
 import "../src/Main.css";
-// import { useState } from 'react'
 
 
 const Main = (props) => {
 
   return (
-
-    <>
-      <Container className="contained-exercises" >
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex1 />
-        </Card>
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex2 />
-        </Card>
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex3 />
-        </Card>
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex4 />
-        </Card>
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex5 />
-        </Card>
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex6 />
-        </Card>
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex7 />
-        </Card>
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex8 />
-        </Card>
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex9 />
-        </Card>
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex10 />
-        </Card>
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex11 />
-        </Card>
-
-        <Card className="exercise-card" style={{ width: '18rem' }}>
-          <Ex12 />
-        </Card>
-
-      </Container >
-
-      
-
-    </>
-
+    <Container className="contained-exercises" >
+      <Ex1 />
+      <Ex2 />
+      <Ex3 />
+      <Ex4 />
+      <Ex5 />
+      <Ex6 />
+      <Ex7 />
+      <Ex8 />
+      <Ex9 />
+      <Ex10 />
+      <Ex11 />
+      <Ex12 />
+      <Ex13 />
+      <Ex14 />
+    </Container >
   )
 }
 export default (Main)
