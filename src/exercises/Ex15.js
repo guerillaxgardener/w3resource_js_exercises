@@ -56,7 +56,7 @@ const Ex15 = (props) => {
 
       <Card.Text className="exercise-solution">
 
-        {showReversed
+        {show
           &&
           <>
             "{strRev}" is your string reversed
