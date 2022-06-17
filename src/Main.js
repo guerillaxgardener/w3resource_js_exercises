@@ -14,6 +14,8 @@ import Ex11 from "./exercises/Ex11";
 import Ex12 from "./exercises/Ex12";
 import Ex13 from "./exercises/Ex13";
 import Ex14 from "./exercises/Ex14";
+import Ex15 from "./exercises/Ex15";
+
 import "../src/Main.css";
 
 
@@ -35,6 +37,7 @@ const Main = (props) => {
       <Ex12 />
       <Ex13 />
       <Ex14 />
+      <Ex15 />
     </Container >
   )
 }
