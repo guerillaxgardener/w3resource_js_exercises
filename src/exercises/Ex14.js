@@ -59,7 +59,7 @@ const Ex14 = (props) => {
         {displayResult
           &&
           <>
-            {str} without duplicates is {uniqueStr}
+            "{str}" without duplicates is "{uniqueStr}"
           </>
         }
       </Card.Text>
