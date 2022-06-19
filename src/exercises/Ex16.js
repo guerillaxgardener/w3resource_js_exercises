@@ -2,55 +2,35 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import '../exercise.css';
-import { useState,  } from "react";
+import { useState } from "react";
 
 const Ex16 = (props) => {
   const [loanTtl, setLoan] = useState(null)
-
   const [interestTtl, setInterest] = useState(null)
-
   const [months, setMonths] = useState(null)
-
-  const [showCalc, showCalcButton] = useState(false)
-  const [showMonthly, showMonthlyYa] = useState(false)
   const [monthlyPayment, setMonthly] = useState(null)
 
   const handleTotalLoanInput = (e) => {
     setLoan(parseInt(e.target.value))
+    setMonthly(false)
   }
 
   const handleInterestInput = (e) => {
     setInterest((parseInt(e.target.value) * .01))
+    setMonthly(false)
   }
 
   const handleTtlMonthsInput = (e) => {
     setMonths(parseInt(e.target.value))
+    setMonthly(false)
   }
 
   const calculatizeMeCaptain = (e) => {
     e.preventDefault()
     let interest = loanTtl * interestTtl
-    console.log("interest", interest)
     let totalOwed = interest + loanTtl
-    console.log("total", totalOwed)
-
     setMonthly(totalOwed / months)
-    console.log(monthlyPayment)
   }
-
-
-  // console.log('string in state', str)
-  // console.log('reversed string in state???', strRev)
-
-
-  // const reversitizer = (e) => {
-  //   let preversed = str
-  //   console.log(preversed)
-  //   let reversed = preversed.split("").reverse().join("")
-  //   handleReversal(reversed)
-  //   console.log(reversed)
-  //   showReversed(true)
-  // }
 
   return (
     <Card className="exercise-card" style={{ width: '18rem' }}>
@@ -100,16 +80,16 @@ const Ex16 = (props) => {
           />
 
           {loanTtl && interestTtl && months
-            &&
+            ?
             <Button
               type="submit"
             >
               Calculate!
             </Button>
+            :
+            null
           }
-
         </form>
-
       </Card.Body>
 
       <Card.Text className="exercise-solution">
@@ -117,12 +97,11 @@ const Ex16 = (props) => {
         {monthlyPayment
           &&
           <>
-            Monthly payment is ${monthlyPayment} 
+            Monthly payment is ${monthlyPayment}
           </>
         }
       </Card.Text>
     </Card >
   )
 }
-
 export default (Ex16)
