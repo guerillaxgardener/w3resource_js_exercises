@@ -7,3 +7,5 @@
 06-15-22 Completed exercises 1-12 while neglecting readme
 
 06-16-22 Completed exercises 13 & 14
+
+6-19-22 Completed exercises 15 & 16
