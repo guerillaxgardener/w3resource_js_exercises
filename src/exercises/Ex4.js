@@ -1,6 +1,6 @@
 //4. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
 import React, { useState } from "react";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import '../exercise.css';
 
 
@@ -26,12 +26,12 @@ const Ex4 = (props) => {
   }
 
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
-
+    <>
       <Card.Title className="exercise-title">
-        Exercise 4: Write a JavaScript program to find the area of a triangle when user provides lengths.
+        Exercise 4: Area of triangle
       </Card.Title>
 
+      <Card.Subtitle>Takes in three user inputs and calculates area of triangle with those angles.</Card.Subtitle>
 
       <Card.Body className="exercise-body">
         <form onSubmit={e => { handleSubmit(e) }}>
@@ -62,23 +62,21 @@ const Ex4 = (props) => {
             onInput={handleSide3}
           />
 
-          <input type="submit" />
-          
+          <Button type="submit" >Submit</Button>
+
         </form>
 
         <Card.Text className="exercise-solution">
           {areaDisplay
             &&
             <>
-              SOLUTION: <br />
-
               the area of triangle with lengths {side1}, {side2}, and {side3} is {area}`
             </>
           }
         </Card.Text>
       </Card.Body>
 
-    </Card>
+    </>
 
   )
 }

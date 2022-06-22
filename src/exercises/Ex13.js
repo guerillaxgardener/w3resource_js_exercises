@@ -1,5 +1,4 @@
 //13. Write a JavaScript program to find the largest of three given integers.
-
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import '../exercise.css';
@@ -47,10 +46,15 @@ const Ex13 = (props) => {
   // }
 
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
+    <>
       <Card.Title className="exercise-title">
-        Exercise 13: Write a JavaScript program to find the largest of three given integers.
+        Exercise 13: Largest integer
       </Card.Title>
+
+      <Card.Subtitle>
+        Takes in three integers from user and displays which is largest.
+      </Card.Subtitle>
+
       <Card.Body className="exercise-body">
         <form>
           <label>
@@ -89,7 +93,7 @@ const Ex13 = (props) => {
           </>
         }
       </Card.Text>
-    </Card>
+    </>
   )
 }
 

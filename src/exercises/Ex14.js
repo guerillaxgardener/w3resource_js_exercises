@@ -28,12 +28,17 @@ const Ex14 = (props) => {
     }
   }
 
-  
+
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
+    <>
       <Card.Title className="exercise-title">
-        Exercise 14: Write a JavaScript program to remove all characters from a given string that appear more than once.
+        Exercise 14: Repeater deleter
       </Card.Title>
+
+      <Card.Subtitle>
+        Takes in a string from user and removes all letters that appear more than once.
+      </Card.Subtitle>
+
       <Card.Body className="exercise-body">
         <form>
           <label>
@@ -63,7 +68,7 @@ const Ex14 = (props) => {
           </>
         }
       </Card.Text>
-    </Card>
+    </>
   )
 }
 

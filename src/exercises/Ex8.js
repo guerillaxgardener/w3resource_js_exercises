@@ -17,15 +17,17 @@ const Ex8 = (props) => {
   }
 
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
-
+    <>
       <Card.Title className="exercise-title">
-        Exercise 8: Write a JavaScript program where the program takes a random integer between 1 & 10, the user is then prompted to input a guess number, and compare to correct value.
+        Exercise 8: Guess my number
       </Card.Title>
 
+      <Card.Subtitle>
+      Takes a random integer guess between 1 & 10 from user, compares and tells if correct.
+      </Card.Subtitle>
 
       <Card.Body className="exercise-body">
-        
+
         <form onSubmit={e => { handleSubmit(e) }}>
           <label>
             Guess an integer between 1 & 10
@@ -52,7 +54,7 @@ const Ex8 = (props) => {
           }
         </Card.Text>
       </Card.Body>
-    </Card>
+    </>
   )
 }
 

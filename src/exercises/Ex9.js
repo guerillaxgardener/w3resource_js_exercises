@@ -36,12 +36,14 @@ const Ex9 = (props) => {
   }
 
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
-
+    <>
       <Card.Title className="exercise-title">
-        Exercise 9: Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
+        Exercise 9: Multiply & Divide
       </Card.Title>
 
+      <Card.Subtitle>
+        Takes in two numbers from user and allows multiplication or division of inputs.
+      </Card.Subtitle>
 
       <Card.Body className="exercise-body">
         <form >
@@ -63,7 +65,7 @@ const Ex9 = (props) => {
             name="integer2"
             onInput={handleSecond}
           />
-          
+
           {int1 && int2
             &&
             <>
@@ -73,7 +75,6 @@ const Ex9 = (props) => {
             </>
 
           }
-
         </form>
 
         {/* Display solutions as they are calculated */}
@@ -95,7 +96,7 @@ const Ex9 = (props) => {
           }
         </Card.Text>
       </Card.Body>
-    </Card>
+    </>
   )
 }
 
