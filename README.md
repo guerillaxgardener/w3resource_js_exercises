@@ -9,3 +9,5 @@
 06-16-22 Completed exercises 13 & 14
 
 6-19-22 Completed exercises 15 & 16
+
+6-22-22 Completed Ex17: 15 minutes (regex needed reviewing)
