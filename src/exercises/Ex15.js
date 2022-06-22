@@ -14,14 +14,10 @@ const Ex15 = (props) => {
     showReversed(false)
   }
 
-  console.log('string in state', str)
-  console.log('reversed string in state???', strRev)
-
-
   const reversitizer = (e) => {
-    let preversed = str
-    console.log(preversed)
-    let reversed = preversed.split("").reverse().join("")
+    let preReversed = str
+    console.log(preReversed)
+    let reversed = preReversed.split("").reverse().join("")
     handleReversal(reversed)
     console.log(reversed)
     showReversed(true)
