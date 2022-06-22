@@ -22,27 +22,24 @@ const Ex1 = (props) => {
   const pageRefresh = () => window.location.reload(false);
 
   return (
-
-    <Card className="exercise-card" style={{ width: '18rem' }}>
+    <>
       <Card.Title className="exercise-title">
-        Exercise 1: Current Date and Time.
+        Exercise 1: Fetch date
       </Card.Title>
+    
+      <Card.Subtitle className="exercise-expected-output">
+        This will fetch date onClick
+      </Card.Subtitle>
 
       <Card.Body className="exercise-body">
-        <Card.Subtitle className="exercise-expected-output">
-          Desired Output : <br />
-          Today is : Tuesday. <br />
-          Current time is : 10 PM : 30 : 38
-        </Card.Subtitle>
 
         <Card.Text className="exercise-solution">
-          SOLUTION: <br />
           Today is : {dayOfWeek} <br />
           Current time is {hours} : {minutes} : {seconds} {prepand}
           <Button variant="success" onClick={pageRefresh}> update time </Button>
         </Card.Text>
       </Card.Body>
-    </Card>
+    </>
   )
 }
 

@@ -20,10 +20,15 @@ const Ex17 = (props) => {
 
 
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
+    <>
       <Card.Title className="exercise-title">
-        Exercise 17: Write a JavaScript program to count the number of vowels in a given string.
+        Exercise 17: Devowel.
       </Card.Title>
+
+      <Card.Subtitle>
+       Takes string from user and de-vowels it, then spits back de-voweled word for user's delight.
+      </Card.Subtitle>
+
       <Card.Body className="exercise-body">
         <form onSubmit={e => { vowelEraser(e) }}>
 
@@ -50,7 +55,7 @@ const Ex17 = (props) => {
         }
 
       </Card.Text>
-    </Card >
+    </>
   )
 }
 

@@ -1,5 +1,4 @@
 //12. JavaScript program to check whether a given integer is within 20 of 100 or 400.
-
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import '../exercise.css';
@@ -9,7 +8,6 @@ const Ex12 = (props) => {
   const [guess, handleGuess] = useState(null)
   const [displayResult, handleDisplay] = useState(false)
   const [guessResult, handleResult] = useState(null)
-
 
   const handleGuessType = (e) => {
     handleDisplay(false)
@@ -26,10 +24,15 @@ const Ex12 = (props) => {
   }
 
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
+    <>
       <Card.Title className="exercise-title">
-        Exercise 12: JavaScript program to check whether a given integer is within 20 of 100 or 400.
+        Exercise 12: Number range
       </Card.Title>
+
+      <Card.Subtitle>
+        Takes in user integer and checks if it's within 20 digit of either 100 or 400.
+      </Card.Subtitle>
+
       <Card.Body className="exercise-body">
         <form>
 
@@ -64,11 +67,8 @@ const Ex12 = (props) => {
               </>
           )
         }
-
       </Card.Text>
-
-
-    </Card>
+    </>
   )
 }
 

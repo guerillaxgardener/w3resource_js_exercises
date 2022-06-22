@@ -33,10 +33,15 @@ const Ex16 = (props) => {
   }
 
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
+    <>
       <Card.Title className="exercise-title">
-        Exercise 16: Write a JavaScript program to calculate mortgage loan's monthly payment
+        Exercise 16: Mortgage Calculator
       </Card.Title>
+
+      <Card.Subtitle>
+        Give this calculator some info and it'll tell you your monthly mortgage rate. Also crazy that I learned today that there is a 'g' in the word 'mortgage'
+      </Card.Subtitle>
+
       <Card.Body className="exercise-body">
         <form onSubmit={e => { calculatizeMeCaptain(e) }}>
 
@@ -101,7 +106,7 @@ const Ex16 = (props) => {
           </>
         }
       </Card.Text>
-    </Card >
+    </>
   )
 }
 export default (Ex16)

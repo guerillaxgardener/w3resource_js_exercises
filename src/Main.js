@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Card, Row } from "react-bootstrap";
 import Ex1 from "./exercises/Ex1";
 import Ex2 from "./exercises/Ex2";
 import Ex3 from "./exercises/Ex3";
@@ -17,32 +17,25 @@ import Ex14 from "./exercises/Ex14";
 import Ex15 from "./exercises/Ex15";
 import Ex16 from "./exercises/Ex16";
 import Ex17 from "./exercises/Ex17";
+import Ex18 from "./exercises/Ex18";
 
 import "../src/Main.css";
 
 
 const Main = (props) => {
 
+  const exArray = [<Ex1 />, <Ex2 />, <Ex3 />, <Ex4 />, <Ex5 />, <Ex6 />, <Ex7 />, <Ex8 />, <Ex9 />, <Ex10 />, <Ex11 />, <Ex12 />, <Ex13 />, <Ex14 />, <Ex15 />, <Ex16 />, <Ex17 />, <Ex18 />]
+
+  let mappedExamples = exArray.map((ex, index) => {
+    return <Card key={index} className="exercise-card" style={{ width: '18rem' }}>{ex}</Card>
+  })
+
   return (
-    <Container className="contained-exercises" >
-      <Ex1 />
-      <Ex2 />
-      <Ex3 />
-      <Ex4 />
-      <Ex5 />
-      <Ex6 />
-      <Ex7 />
-      <Ex8 />
-      <Ex9 />
-      <Ex10 />
-      <Ex11 />
-      <Ex12 />
-      <Ex13 />
-      <Ex14 />
-      <Ex15 />
-      <Ex16 />
-      <Ex17 />
-    </Container >
+    <>
+    <Row xs={1} md={2} lg={3} xl={4} className="g-4">
+    { mappedExamples }
+    </Row>
+    </>
   )
 }
 export default (Main)

@@ -24,10 +24,15 @@ const Ex15 = (props) => {
   }
 
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
+    <>
       <Card.Title className="exercise-title">
-        Exercise 15: Write a JavaScript program to reverse a given string.
+        Exercise 15: Reversitize me
       </Card.Title>
+
+      <Card.Subtitle>
+        Takes a string from user and returns string in reverse order
+      </Card.Subtitle>
+
       <Card.Body className="exercise-body">
         <form>
           <label>
@@ -59,7 +64,7 @@ const Ex15 = (props) => {
           </>
         }
       </Card.Text>
-    </Card >
+    </>
   )
 }
 

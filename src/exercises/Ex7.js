@@ -1,5 +1,4 @@
 //7. Write a JavaScript program to find which 01 January is going to be a Sunday between 2014 and 2050.
-
 import React from "react";
 import { Card, ListGroup } from "react-bootstrap";
 import '../exercise.css';
@@ -17,10 +16,14 @@ const Ex7 = (props) => {
     return <ListGroup.Item key={index}>{year}</ListGroup.Item>
   })
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
+    <>
       <Card.Title className="exercise-title">
-        Exercise 7: Write a JavaScript program to find which 01 January's are going to be a Sunday between 2014 and 2050.
+        Exercise 7: Day of week detection
       </Card.Title>
+
+      <Card.Subtitle>
+        This program shall find which 01 January's are going to be a Sunday between 2014 and 2050.
+      </Card.Subtitle>
 
       <Card.Body className="exercise-body">
         <Card.Text className="exercise-solution">
@@ -28,12 +31,11 @@ const Ex7 = (props) => {
 
           The following years will have Jan 1st on a Sunday:
           <ListGroup>
-           {mappedYears}
+            {mappedYears}
           </ListGroup>
         </Card.Text>
       </Card.Body>
-
-    </Card>
+    </>
   )
 }
 

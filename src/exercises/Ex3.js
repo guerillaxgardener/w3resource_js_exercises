@@ -12,23 +12,23 @@ const Ex3 = (props) => {
   let yyyy = today.getFullYear();
 
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
-        <Card.Title className="exercise-title">
-          Exercise 3: Display the current date.
-        </Card.Title>
+    <>
+      <Card.Title className="exercise-title">
+        Exercise 3: Reformat date
+      </Card.Title>
 
-        <Card.Body className="exercise-body">
-          <Card.Subtitle className="exercise-expected-output">
-            Expected Output : <br />
-            mm-dd-yyyy, mm/dd/yyyy
-          </Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
+        Code shall fetch date and display in the following formats: <br />
+        mm-dd-yyyy, mm/dd/yyyy
+      </Card.Subtitle>
 
-          <Card.Text className="exercise-solution">
-            SOLUTION: <br />
-            `{mm}-{dd}-{yyyy}, {mm}/{dd}/{yyyy}`
-          </Card.Text>
-        </Card.Body>
-    </Card>
+      <Card.Body className="exercise-body">
+
+        <Card.Text className="exercise-solution">
+          `{mm}-{dd}-{yyyy}, {mm}/{dd}/{yyyy}`
+        </Card.Text>
+      </Card.Body>
+    </>
   )
 }
 

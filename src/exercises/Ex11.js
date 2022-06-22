@@ -5,17 +5,21 @@ import { Card } from "react-bootstrap";
 import '../exercise.css';
 
 const Ex11 = (props) => {
-  
+
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
+    <>
       <Card.Title className="exercise-title">
-        Exercise 11: Write a JavaScript program to get the website URL (loading page)
+        Exercise 11: Display URL
       </Card.Title>
+
+      <Card.Subtitle>
+        Displays current user web address
+      </Card.Subtitle>
 
       <Card.Body className="exercise-body">
         The current webpage is {document.URL}
       </Card.Body>
-    </Card>
+    </>
   )
 }
 

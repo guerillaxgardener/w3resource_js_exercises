@@ -1,5 +1,4 @@
 //10. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit. 
-
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import '../exercise.css';
@@ -28,10 +27,15 @@ const Ex10 = (props) => {
   }
 
   return (
-    <Card className="exercise-card" style={{ width: '18rem' }}>
+    <>
       <Card.Title className="exercise-title">
-        Exercise 10: Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+        Exercise 10: Temp conversion
       </Card.Title>
+
+      <Card.Subtitle>
+        This takes in user integer and allows conversion between celsius and fahrenheit.
+      </Card.Subtitle>
+
       <Card.Body className="exercise-body">
         <form>
 
@@ -101,11 +105,8 @@ const Ex10 = (props) => {
             final temp is {finalTemp} celsius
           </>
         }
-
       </Card.Text>
-
-
-    </Card>
+    </>
   )
 }
 
