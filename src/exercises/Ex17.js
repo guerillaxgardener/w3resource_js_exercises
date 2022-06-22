@@ -9,11 +9,15 @@ const Ex17 = (props) => {
   const [theDeVoweled, storeDeVoweled] = useState(null)
   const [showSolution, handleTheShow] = useState(false)
 
-  const storeString = (e) => storingString(e.target.value)
+  const storeString = (e) => {
+    storingString(e.target.value)
+    handleTheShow(false)
+  }
 
   const vowelEraser = (e) => {
     e.preventDefault()
-    let deVoweled = voweledString.replace(/[aeiou]/gi, "")
+    let regex = /[aeiou]/gi
+    let deVoweled = voweledString.replace(regex, "")
     storeDeVoweled(deVoweled)
     handleTheShow(true)
   }
