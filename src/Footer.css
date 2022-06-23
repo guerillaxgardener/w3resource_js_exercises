@@ -1,7 +1,21 @@
-.page-footer{
-  background-color: aqua;
-  display:flex;
+.footer {
+  background-color: rgb(71, 242, 251);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 40px;
+  border-radius: 15px 15px 0px 0px;
+  border: 2px darkblue dashed
+
+}
+
+.page-footer {
+  margin-right: 1%;
+  /* display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: flex-end;
   padding-right: 1%;
+  margin: 2% 0% 2% 85%; */
 }
