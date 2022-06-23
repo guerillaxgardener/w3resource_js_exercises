@@ -18,24 +18,25 @@ import Ex15 from "./exercises/Ex15";
 import Ex16 from "./exercises/Ex16";
 import Ex17 from "./exercises/Ex17";
 import Ex18 from "./exercises/Ex18";
+import Ex19 from "./exercises/Ex19";
 
-import "../src/Main.css";
+import "./exercise.css";
 
 
 const Main = (props) => {
 
-  const exArray = [<Ex1 />, <Ex2 />, <Ex3 />, <Ex4 />, <Ex5 />, <Ex6 />, <Ex7 />, <Ex8 />, <Ex9 />, <Ex10 />, <Ex11 />, <Ex12 />, <Ex13 />, <Ex14 />, <Ex15 />, <Ex16 />, <Ex17 />, <Ex18 />]
+  const exArray = [<Ex1 />, <Ex2 />, <Ex3 />, <Ex4 />, <Ex5 />, <Ex6 />, <Ex7 />, <Ex8 />, <Ex9 />, <Ex10 />, <Ex11 />, <Ex12 />, <Ex13 />, <Ex14 />, <Ex15 />, <Ex16 />, <Ex17 />, <Ex18 />, <Ex19 />]
 
   let mappedExamples = exArray.map((ex, index) => {
-    return <Card key={index} className="exercise-card" style={{ width: '18rem' }}>{ex}</Card>
+    return <Card key={index} className="exercise-card" >{ex}</Card>
   })
 
   return (
-    <>
-    <Row xs={1} md={2} lg={3} xl={4} className="g-4">
-    { mappedExamples }
-    </Row>
-    </>
+    <div className="flex-exercises">
+      
+        {mappedExamples}
+  
+    </div>
   )
 }
 export default (Main)
