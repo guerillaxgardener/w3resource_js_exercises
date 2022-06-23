@@ -35,7 +35,7 @@ const Ex6 = (props) => {
 
         <Card.Text className="exercise-solution">
 
-        <Button variant="danger" ref={target} onClick={() => setShow(!show)}>
+        <Button  ref={target} onClick={() => setShow(!show)}>
           is {currentYear} a leap year?
         </Button>
           <Overlay target={target.current} show={show} placement="bottom">
