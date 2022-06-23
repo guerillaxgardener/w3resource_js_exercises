@@ -52,7 +52,10 @@ const Ex14 = (props) => {
           />
 
           <Button
-            type="submit" className="button">
+            type="submit" 
+            className="button"
+            variant="danger"
+            >
             Remove duplicate string characters...
           </Button>
         </form>
