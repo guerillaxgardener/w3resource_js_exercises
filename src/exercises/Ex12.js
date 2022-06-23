@@ -15,6 +15,7 @@ const Ex12 = (props) => {
   }
 
   const handleHundred = (e) => {
+    e.preventDefault()
     handleDisplay(true)
     if ((Math.abs(100 - guess) <= 20) || (Math.abs(400 - guess) <= 20)) {
       handleResult(true)
@@ -26,15 +27,15 @@ const Ex12 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 12: Number range
+        Ex 12: Number range
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         Takes in user integer and checks if it's within 20 digit of either 100 or 400.
       </Card.Subtitle>
 
       <Card.Body className="exercise-body">
-        <form>
+        <form onSubmit={e => { handleHundred(e) }}>
 
           <label>
             Enter number:
@@ -45,7 +46,7 @@ const Ex12 = (props) => {
             onInput={handleGuessType}
           />
           <Button
-            onClick={e => { handleHundred(e) }}>
+            type="submit" className="button">
             Check number...
           </Button>
         </form>

@@ -22,10 +22,10 @@ const Ex17 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 17: Devowel.
+        Ex 17: Devowel.
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
        Takes string from user and de-vowels it, then spits back de-voweled word for user's delight.
       </Card.Subtitle>
 
@@ -42,7 +42,7 @@ const Ex17 = (props) => {
             onChange={e => { storeString(e) }}
           />
 
-          <Button type="submit" > Remove Vowels </Button>
+          <Button type="submit" className="button" variant="danger" > Remove Vowels </Button>
         </form>
       </Card.Body>
 

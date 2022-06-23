@@ -9,10 +9,10 @@ const Ex11 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 11: Display URL
+        Ex 11: Display URL
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         Displays current user web address
       </Card.Subtitle>
 

@@ -15,6 +15,7 @@ const Ex15 = (props) => {
   }
 
   const reversitizer = (e) => {
+    e.preventDefault()
     let preReversed = str
     console.log(preReversed)
     let reversed = preReversed.split("").reverse().join("")
@@ -26,15 +27,15 @@ const Ex15 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 15: Reversitize me
+        Ex 15: Reversitize me
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         Takes a string from user and returns string in reverse order
       </Card.Subtitle>
 
       <Card.Body className="exercise-body">
-        <form>
+        <form  onSubmit={e => { reversitizer(e) }}>
           <label>
             Enter a string:
           </label>
@@ -47,7 +48,8 @@ const Ex15 = (props) => {
           {str
             &&
             <Button
-              onClick={e => { reversitizer(e) }}>
+            className="button"
+             type="submit">
               Reverse!
             </Button>
           }

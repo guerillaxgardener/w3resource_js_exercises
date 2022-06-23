@@ -14,7 +14,7 @@ const Ex3 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 3: Reformat date
+        Ex 3: Reformat date
       </Card.Title>
 
       <Card.Subtitle className="exercise-expected-output">

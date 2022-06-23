@@ -26,6 +26,7 @@ const Ex13 = (props) => {
 
   // function to take inputs as array and store largest to state
   const highestInteger = (e) => {
+    e.preventDefault()
     let arr = [int1, int2, int3]
     var largest = arr[0]
 
@@ -48,15 +49,15 @@ const Ex13 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 13: Largest integer
+        Ex 13: Largest integer
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         Takes in three integers from user and displays which is largest.
       </Card.Subtitle>
 
       <Card.Body className="exercise-body">
-        <form>
+        <form onSubmit={e => { highestInteger(e) }}>
           <label>
             Enter three numbers:
           </label>
@@ -77,8 +78,8 @@ const Ex13 = (props) => {
             onInput={handleInteger3}
           />
 
-          <Button
-            onClick={e => { highestInteger(e) }}>
+          <Button type="submit"
+             className="button">
             Check number...
           </Button>
         </form>

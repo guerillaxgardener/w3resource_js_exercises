@@ -29,10 +29,10 @@ const Ex10 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 10: Temp conversion
+        Ex 10: Temp conversion
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         This takes in user integer and allows conversion between celsius and fahrenheit.
       </Card.Subtitle>
 
@@ -78,8 +78,6 @@ const Ex10 = (props) => {
 
         </form>
 
-      </Card.Body>
-
       <Card.Text className="exercise-solution">
         {convert && temp
           &&
@@ -106,6 +104,8 @@ const Ex10 = (props) => {
           </>
         }
       </Card.Text>
+      </Card.Body>
+
     </>
   )
 }
