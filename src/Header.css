@@ -1,8 +1,11 @@
-.page-title{
+.page-title {
   background-color: aqua;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: stretch;
   font-family: 'Varela Round', sans-serif;
-
+  margin: 1% 15% 1% 15%;
+  border-radius: 15px;
+  border: 2px darkblue dashed
 }
