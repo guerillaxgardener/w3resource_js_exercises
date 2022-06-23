@@ -1,6 +1,6 @@
 //8. Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched".
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import '../exercise.css';
 import { useState } from 'react'
 
@@ -19,28 +19,28 @@ const Ex8 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 8: Guess my number
+        Ex 8: Guess my number
       </Card.Title>
 
-      <Card.Subtitle>
-      Takes a random integer guess between 1 & 10 from user, compares and tells if correct.
+      <Card.Subtitle className="exercise-expected-output">
+        Takes a random integer guess between 1 & 10 from user, compares and tells if correct.
       </Card.Subtitle>
 
       <Card.Body className="exercise-body">
 
-        <form onSubmit={e => { handleSubmit(e) }}>
-          <label>
-            Guess an integer between 1 & 10
-          </label>
-          <input
-            type="integer"
-            name="integerGuess"
-            onInput={guessHandler}
-          />
-        </form>
-
         <Card.Text className="exercise-solution">
-          SOLUTION: <br />
+          <form onSubmit={e => { handleSubmit(e) }}>
+            <label>
+              Guess an integer 1 - 10
+            </label>
+            <input
+              type="integer"
+              name="integerGuess"
+              onInput={guessHandler}
+            />
+            <Button type="submit" className="button"> Guess </Button>
+          </form>
+
 
           {answerDisplay
             &&

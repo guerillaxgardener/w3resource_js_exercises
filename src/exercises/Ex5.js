@@ -25,10 +25,10 @@ const Ex5 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 5: Days 2 Christmas
+        Ex 5: Days 2 Christmas
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         Displays days remaining to next Christmas
       </Card.Subtitle>
 
@@ -38,7 +38,7 @@ const Ex5 = (props) => {
         
           {xmasDisplay
             ?
-            `🎉 There are ${days2Xmas} days to Christmas! 🎉`
+            `${days2Xmas} days to Christmas! `
             :
             <Button variant="success" onClick={handleChristmas}> How many days until Christmas?! </Button>
           }

@@ -35,10 +35,10 @@ const Ex16 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 16: Mortgage Calculator
+        Ex 16: Mortgage Calculator
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         Give this calculator some info and it'll tell you your monthly mortgage rate. Also crazy that I learned today that there is a 'g' in the word 'mortgage'
       </Card.Subtitle>
 
@@ -88,6 +88,7 @@ const Ex16 = (props) => {
             ?
             <Button
               type="submit"
+              className="button"
             >
               Calculate!
             </Button>

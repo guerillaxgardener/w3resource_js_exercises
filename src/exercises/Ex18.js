@@ -44,10 +44,10 @@ function Ex18(props) {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 18: Type de angle
+        Ex 18: Type de angle
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         Feed it a number between 0-180 and it'll tell you what angle type you've got
       </Card.Subtitle>
 
@@ -64,7 +64,7 @@ function Ex18(props) {
             onChange={e => { handleInput(e) }}
           />
 
-          <Button type="submit" > Determine angle type </Button>
+          <Button type="submit" className="button" > Determine angle type </Button>
         </form>
       </Card.Body>
 

@@ -1,12 +1,64 @@
-.exercise-title {
-  background-color: beige;
-  font-size: 30px;
-  font-size: 1.5vw;
+.flex-exercises {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
 }
 
-
-.exercise-card{
-  background-color: rgb(222, 122, 0);
-  
+.exercise-card {
   margin: 1%;
-  }
+  padding: .1%;
+  /* height: 400px;
+  width: 350px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 18rem;
+  height:26rem;
+}
+
+.exercise-title {
+  background-color: rgb(52, 206, 233);
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  height: 15%;
+
+}
+
+.exercise-expected-output {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: stretch;
+  border-bottom: solid lightgray 1px;
+  border-radius: 6px;
+}
+
+.exercise-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-top: 3%;
+  font-size: 1vw;
+
+
+}
+
+.mapped-factors {
+  margin-top: 2%;
+}
+
+.button{
+  margin-top: 2%;
+}
+

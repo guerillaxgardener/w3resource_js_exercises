@@ -38,14 +38,16 @@ const Ex9 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 9: Multiply & Divide
+        Ex 9: Multiply & Divide
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         Takes in two numbers from user and allows multiplication or division of inputs.
       </Card.Subtitle>
 
       <Card.Body className="exercise-body">
+       
+      <Card.Text className="exercise-solution">
         <form >
 
           <label>
@@ -78,7 +80,7 @@ const Ex9 = (props) => {
         </form>
 
         {/* Display solutions as they are calculated */}
-        <Card.Text className="exercise-solution">
+        
           {product
             &&
             <>

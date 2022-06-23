@@ -13,15 +13,15 @@ const Ex7 = (props) => {
   }
 
   let mappedYears = yearsAccepted.map((year, index) => {
-    return <ListGroup.Item key={index}>{year}</ListGroup.Item>
+    return <ListGroup.Item key={index} >{year}</ListGroup.Item>
   })
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 7: Day of week detection
+        Ex 7: Day of week detection
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         This program shall find which 01 January's are going to be a Sunday between 2014 and 2050.
       </Card.Subtitle>
 
@@ -30,7 +30,7 @@ const Ex7 = (props) => {
           SOLUTION: <br />
 
           The following years will have Jan 1st on a Sunday:
-          <ListGroup>
+          <ListGroup style={{overflow: 'scroll', height: '100px'}}>
             {mappedYears}
           </ListGroup>
         </Card.Text>

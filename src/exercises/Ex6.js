@@ -24,20 +24,20 @@ const Ex6 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 6: Leap year?
+        Ex 6: Leap year?
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         Tells if you are currently living in a leap year
       </Card.Subtitle>
 
       <Card.Body className="exercise-body">
-        <Button variant="danger" ref={target} onClick={() => setShow(!show)}>
-          is {currentYear} a leap year?
-        </Button>
 
         <Card.Text className="exercise-solution">
 
+        <Button  ref={target} onClick={() => setShow(!show)}>
+          is {currentYear} a leap year?
+        </Button>
           <Overlay target={target.current} show={show} placement="bottom">
             {({ placement, arrowProps, show: _show, popper, ...props }) => (
 

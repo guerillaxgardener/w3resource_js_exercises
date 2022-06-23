@@ -28,45 +28,46 @@ const Ex4 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 4: Area of triangle
+        Ex 4: Area of triangle
       </Card.Title>
 
-      <Card.Subtitle>Takes in three user inputs and calculates area of triangle with those angles.</Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">Takes in three user inputs and calculates area of triangle with those angles.</Card.Subtitle>
 
       <Card.Body className="exercise-body">
-        <form onSubmit={e => { handleSubmit(e) }}>
-          <label>
-            Side 1:
-          </label>
-          <input
-            type="number"
-            name="side1"
-            onInput={handleSide1}
-          />
-
-          <label>
-            Side 2:
-          </label>
-          <input
-            type="number"
-            name="side2"
-            onInput={handleSide2}
-          />
-
-          <label>
-            Side 3:
-          </label>
-          <input
-            type="number"
-            name="side3"
-            onInput={handleSide3}
-          />
-
-          <Button type="submit" >Submit</Button>
-
-        </form>
-
         <Card.Text className="exercise-solution">
+          <form onSubmit={e => { handleSubmit(e) }}>
+            <label>
+              Side 1:
+            </label>
+            <input
+              type="number"
+              name="side1"
+              onInput={handleSide1}
+            />
+
+            <label>
+              Side 2:
+            </label>
+            <input
+              type="number"
+              name="side2"
+              onInput={handleSide2}
+            />
+
+            <label>
+              Side 3:
+            </label>
+            <input
+              type="number"
+              name="side3"
+              onInput={handleSide3}
+            />
+
+            <Button type="submit" className="button" >Submit</Button>
+
+          </form>
+
+
           {areaDisplay
             &&
             <>

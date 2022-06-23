@@ -24,7 +24,7 @@ const Ex1 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 1: Fetch date
+        Ex 1: Fetch date
       </Card.Title>
     
       <Card.Subtitle className="exercise-expected-output">
@@ -32,7 +32,6 @@ const Ex1 = (props) => {
       </Card.Subtitle>
 
       <Card.Body className="exercise-body">
-
         <Card.Text className="exercise-solution">
           Today is : {dayOfWeek} <br />
           Current time is {hours} : {minutes} : {seconds} {prepand}

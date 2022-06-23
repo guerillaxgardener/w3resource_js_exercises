@@ -32,15 +32,15 @@ const Ex14 = (props) => {
   return (
     <>
       <Card.Title className="exercise-title">
-        Exercise 14: Repeater deleter
+        Ex 14: Repeater deleter
       </Card.Title>
 
-      <Card.Subtitle>
+      <Card.Subtitle className="exercise-expected-output">
         Takes in a string from user and removes all letters that appear more than once.
       </Card.Subtitle>
 
       <Card.Body className="exercise-body">
-        <form>
+        <form onSubmit={e => { stringifyMeCaptain(e) }}>
           <label>
             Enter a string:
           </label>
@@ -52,7 +52,10 @@ const Ex14 = (props) => {
           />
 
           <Button
-            onClick={e => { stringifyMeCaptain(e) }}>
+            type="submit" 
+            className="button"
+            variant="danger"
+            >
             Remove duplicate string characters...
           </Button>
         </form>
