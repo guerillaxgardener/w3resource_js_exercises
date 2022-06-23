@@ -4,17 +4,7 @@ import './Footer.css'
 
 
 const Footer = (props) => {
-  // STATE**************************************
-  // const [show, setShow] = useState(false);
-
-
-  //EVENTHANDLER********************************
-
-
-
-  //**************************************************
   return (
-
     <>
       <footer className="footer">
 
